@@ -1,7 +1,7 @@
 {
   "name": "Position Sizing Calculator",
   "short_name": "PositionCalc",
-  "start_url": "/",
+  "start_url": "/position-sizing-calculator/",  // Update this
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#28a745",

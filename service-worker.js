@@ -1,11 +1,12 @@
 const CACHE_NAME = 'position-calc-v1';
 const ASSETS = [
-  '/',
-  '/index.html',
-  '/styles.css',
-  '/app.js',
-  '/icons/icon-192x192.png',
-  '/icons/icon-512x512.png'
+  '/position-sizing-calculator/',
+  '/position-sizing-calculator/index.html',
+  '/position-sizing-calculator/styles.css',
+  '/position-sizing-calculator/app.js',
+  '/position-sizing-calculator/manifest.json',
+  '/position-sizing-calculator/icons/icon-192x192.png',
+  '/position-sizing-calculator/icons/icon-512x512.png'
 ];
 
 self.addEventListener('install', (event) => {
