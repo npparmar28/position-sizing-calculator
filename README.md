@@ -29,7 +29,7 @@ A Progressive Web App (PWA) to calculate position sizing for trading in **Indian
 
 ## Live Demo
 Try the live version here:  
-👉 [Position Sizing Calculator on GitHub Pages](https://<npparmar28>.github.io/position-sizing-calculator/)
+👉 [Position Sizing Calculator on GitHub Pages](https://npparmar28.github.io/position-sizing-calculator/)
 
 ---
 
@@ -54,4 +54,4 @@ Try the live version here:
 ## How to Run Locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<npparmar28>/position-sizing-calculator.git
+   git clone https://github.com/npparmar28/position-sizing-calculator.git
