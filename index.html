@@ -4,24 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Position Sizing Calculator</title>
-  <link rel="stylesheet" href="/position-sizing-calculator/styles.css">  <!-- Update this -->
-  <link rel="manifest" href="/position-sizing-calculator/manifest.json">  <!-- Update this -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
   <div class="container">
     <h1>Position Sizing Calculator</h1>
     <form id="calculator">
       <label for="accountBalance">Account Balance (INR):</label>
-      <input type="number" id="accountBalance" required>
+      <input type="number" id="accountBalance" placeholder="Enter account balance" required>
 
       <label for="riskPercentage">Risk Percentage (%):</label>
-      <input type="number" id="riskPercentage" required>
+      <input type="number" id="riskPercentage" placeholder="Enter risk percentage" required>
 
       <label for="stopLoss">Stop Loss (INR):</label>
-      <input type="number" id="stopLoss" required>
+      <input type="number" id="stopLoss" placeholder="Enter stop loss" required>
 
       <label for="entryPrice">Entry Price (INR):</label>
-      <input type="number" id="entryPrice" required>
+      <input type="number" id="entryPrice" placeholder="Enter entry price" required>
 
       <button type="button" onclick="calculatePosition()">Calculate</button>
     </form>
@@ -31,10 +31,10 @@
     </div>
   </div>
 
-  <script src="/position-sizing-calculator/app.js"></script>  <!-- Update this -->
+  <script src="app.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/position-sizing-calculator/service-worker.js');  <!-- Update this -->
+      navigator.serviceWorker.register('service-worker.js');
     }
   </script>
 </body>
