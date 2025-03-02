@@ -9,18 +9,18 @@ function calculatePosition() {
     return;
   }
 
-  // Calculate Stop Loss Amount (Difference between Entry Price and Stop Loss Price)
-  const stopLossAmount = entryPrice - stopLossPrice;
-
   // Calculate Risk Amount
   const riskAmount = (accountBalance * riskPercentage) / 100;
 
-  // Calculate Position Size
-  const positionSize = riskAmount / stopLossAmount;
+  // Calculate Stop Loss Amount
+  const stopLossAmount = entryPrice - stopLossPrice;
 
-  // Calculate Quantity
-  const quantity = positionSize;
+  // Calculate Position Size (Units)
+  const positionSizeUnits = riskAmount / stopLossAmount;
+
+  // Calculate Position Size (INR)
+  const positionSizeINR = positionSizeUnits * entryPrice;
 
   // Display Result
-  document.getElementById('positionSize').textContent = `₹${positionSize.toFixed(2)} (${quantity.toFixed(2)} units)`;
+  document.getElementById('positionSize').textContent = `₹${positionSizeINR.toFixed(2)} (${positionSizeUnits.toFixed(2)} units)`;
 }
